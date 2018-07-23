@@ -1,0 +1,19 @@
+server:
+  port: ${port}
+spring:
+  application:
+    name: ribbon
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: true
+    service-url:
+      defaultZone: ${eureka.server}
+
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+    instance-id: ${spring.application.name}:${server.port}
+    
+test:
+  info: "this is a config server file"
