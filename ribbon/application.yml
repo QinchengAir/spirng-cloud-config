@@ -16,4 +16,4 @@ eureka:
     instance-id: ${spring.application.name}:${server.port}
     
 test:
-  info: "this is a config server file!!!!"
+  info: "this is a config server file!!!!@@@@"
